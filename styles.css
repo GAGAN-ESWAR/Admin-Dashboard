@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* Dashboard */
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(235, 157, 41);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.dashboard>div{
+    margin-bottom: 2rem;
+}
+
+.logo div{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo img{
+    width: 30px;
+    height: auto;
+}
+
+.menu img,
+.misc img
+{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.logo{
+    display: flex;
+    gap: 1rem;
+}
+
+.menu>div,
+.misc>div {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
