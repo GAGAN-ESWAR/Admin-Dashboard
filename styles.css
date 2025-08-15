@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Bubblegum Sans';
+    src: url('fonts/BubblegumSans-Regular.woff2') format('woff2'),
+        url('fonts/BubblegumSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 *{
     box-sizing: border-box;
+    font-family: "Bubblegum Sans",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
@@ -12,13 +22,16 @@ body{
     grid-template-columns: 1fr 5fr;
 }
 
+.layout>*{
+    padding: 1rem;
+}
+
 /* Dashboard */
 
 .dashboard{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    background-color: rgb(235, 157, 41);
+    background-color: rgb(235, 190, 41);
 }
 
 a{
@@ -59,6 +72,33 @@ a{
     margin-bottom: 0.5rem;
 }
 
+/* Header */
+
+.head1 img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+img[src*="profile-"]{
+    width: 3rem;
+    height: auto;
+}
+
+.head1{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.head1 input{
+    flex: 1;
+    max-width: 75%;
+    background-color: rgb(250, 234, 181);
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10%;
+}
 
 
 
