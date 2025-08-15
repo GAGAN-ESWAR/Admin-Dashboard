@@ -94,11 +94,38 @@ img[src*="profile-"]{
 .head1 input{
     flex: 1;
     max-width: 75%;
-    background-color: rgb(250, 234, 181);
+    background-color: rgb(240, 216, 171);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-right: 10%;
+    border: none;
 }
 
+.head2 img{
+    width: 4rem;
+    height: auto;
+}
+
+.head2{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.head2 .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(240, 216, 171);
+    margin: 0 2rem;
+    border: none;
+}
 
 
